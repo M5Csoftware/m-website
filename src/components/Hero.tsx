@@ -24,7 +24,7 @@ export default function Hero() {
     <section className="max-w-6xl w-full mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-6">
       {/* Orange form card */}
       <div className="lg:col-span-5 bg-[#f27a1a] text-white p-7 rounded-2xl shadow-xl relative overflow-hidden flex flex-col gap-5">
-        <div className="absolute inset-0 bg-white/[0.035] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:14px_14px] pointer-events-none" />
+        <div className="absolute inset-0 bg-white/4 bg-[radial-gradient(#fff_1px,transparent_1px)] bg-size-[14px_14px] pointer-events-none" />
         <div className="relative z-10 flex flex-col gap-3">
           <h2 className="text-2xl font-extrabold leading-tight uppercase tracking-tight">
             CONNECTING CONTINENTS,<br />DELIVERING TRUST.
@@ -77,9 +77,9 @@ export default function Hero() {
       </div>
 
       {/* Dark hero card */}
-      <div className="lg:col-span-7 bg-[#0b1220] rounded-2xl p-7 text-white relative overflow-hidden flex flex-col justify-between min-h-[360px] shadow-xl">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0b1220] via-slate-900 to-indigo-950/40 z-0" />
-        <div className="absolute inset-0 bg-white/[0.02] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:14px_14px] pointer-events-none z-0" />
+      <div className="lg:col-span-7 bg-[#0b1220] rounded-2xl p-7 text-white relative overflow-hidden flex flex-col justify-between min-h-90 shadow-xl">
+        <div className="absolute inset-0 bg-linear-to-br from-[#0b1220] via-slate-900 to-indigo-950/40 z-0" />
+        <div className="absolute inset-0 bg-white/2 bg-[radial-gradient(#fff_1px,transparent_1px)] bg-size-[14px_14px] pointer-events-none z-0" />
         <div className="relative z-10 flex flex-col gap-3">
           <span className="text-[10px] font-bold tracking-widest uppercase bg-[#f27a1a]/20 text-[#f27a1a] border border-[#f27a1a]/30 w-fit px-2.5 py-0.5 rounded-full">Global Logistics</span>
           <h2 className="text-3xl font-extrabold tracking-tight leading-tight mt-1">

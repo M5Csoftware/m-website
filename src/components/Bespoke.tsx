@@ -11,8 +11,8 @@ export default function Bespoke() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         {/* Left: warehouse worker photo card */}
-        <div className="lg:col-span-5 bg-[#0b1220] rounded-2xl relative overflow-hidden min-h-[380px] shadow flex flex-col justify-between">
-          <div className="absolute inset-0 bg-white/[0.03] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:14px_14px] z-10 pointer-events-none" />
+        <div className="lg:col-span-5 bg-[#0b1220] rounded-2xl relative overflow-hidden min-h-95 shadow flex flex-col justify-between">
+          <div className="absolute inset-0 bg-white/3 bg-[radial-gradient(#fff_1px,transparent_1px)] bg-size-[14px_14px] z-10 pointer-events-none" />
           <Image src="/warehouse_worker.png" alt="Warehouse worker" fill className="object-cover opacity-60" />
           <div className="relative z-20 p-6 flex flex-col gap-1">
             <span className="text-[9px] font-bold uppercase text-[#f27a1a] tracking-widest">Express Air Courier</span>
@@ -48,7 +48,7 @@ export default function Bespoke() {
             { icon: "📦", title: "Guaranteed Delivery Dates", desc: "Time-critical consignments enjoy scheduled standard arrivals. We verify transit lanes daily to provide dependable delivery dates." },
           ].map((item) => (
             <div key={item.title} className="bg-white border border-slate-100 p-4 rounded-xl shadow-sm flex items-start gap-4 hover:shadow-md transition-shadow">
-              <div className="h-9 w-9 rounded-lg bg-orange-50 flex-shrink-0 flex items-center justify-center text-base">{item.icon}</div>
+              <div className="h-9 w-9 rounded-lg bg-orange-50 shrink-0 flex items-center justify-center text-base">{item.icon}</div>
               <div className="flex flex-col">
                 <span className="text-xs font-bold text-[#0b1220]">{item.title}</span>
                 <p className="text-[11px] text-zinc-500 leading-normal mt-0.5">{item.desc}</p>
