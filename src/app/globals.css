@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdfdfd;
+  --foreground: #0f172a;
+  --primary-orange: #f27a1a;
+  --primary-orange-hover: #db660c;
+  --dark-navy: #0d1527;
+  --soft-gray: #f8fafc;
+  --border-color: rgba(15, 23, 42, 0.08);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-orange: var(--primary-orange);
+  --color-brand-orange-hover: var(--primary-orange-hover);
+  --color-brand-navy: var(--dark-navy);
+  --color-brand-gray: var(--soft-gray);
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+/* Elegant scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 2px solid #f8fafc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth behaviors */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Micro-animations and shadows */
+.shadow-premium {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.shadow-premium-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shadow-premium-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(242, 122, 26, 0.08);
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .95;
+    transform: scale(1.02);
+  }
+}
