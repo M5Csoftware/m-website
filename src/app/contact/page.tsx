@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 import { Phone, Mail, MapPin, Clock, Globe, ArrowUpRight } from "lucide-react";
 
 export default function ContactPage() {
@@ -45,9 +46,6 @@ export default function ContactPage() {
             <h1 className="text-[36px] md:text-[44px] font-extrabold text-white leading-tight tracking-tight">
               Contact Us
             </h1>
-          </div>
-          <div className="text-white/60 text-sm font-semibold tracking-wide bg-white/10 px-4 py-2 rounded-full border border-white/10">
-            Home / Contact Us
           </div>
         </div>
       </section>
