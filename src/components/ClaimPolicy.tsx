@@ -43,8 +43,8 @@ export default function ClaimPolicy() {
         </div>
 
         {/* Right: amber card */}
-        <div className="lg:col-span-5 bg-[#a16207] text-white p-7 rounded-2xl shadow flex flex-col gap-5 relative overflow-hidden min-h-[340px]">
-          <div className="absolute inset-0 bg-white/[0.04] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:14px_14px] pointer-events-none" />
+        <div className="lg:col-span-5 bg-[#a16207] text-white p-7 rounded-2xl shadow flex flex-col gap-5 relative overflow-hidden min-h-85">
+          <div className="absolute inset-0 bg-white/4 bg-[radial-gradient(#fff_1px,transparent_1px)] bg-size-[14px_14px] pointer-events-none" />
           <div className="relative z-10 flex flex-col gap-3">
             <span className="text-[9px] font-bold uppercase tracking-widest bg-white/10 w-fit px-2.5 py-0.5 rounded-full">Disbursement Policy</span>
             <h3 className="text-xl font-black leading-tight uppercase">GET CLAIM IN 24 HOURS ON LOSS &amp; DAMAGE REFUNDING PROCESS</h3>
@@ -52,7 +52,7 @@ export default function ClaimPolicy() {
           <div className="relative z-10 flex flex-col gap-3 mt-auto pt-5 border-t border-white/10">
             {["Complete Verification in 12 Hours", "Affordable shipping insurance rates", "Immediate bank account refund disbursement"].map((s, i) => (
               <div key={i} className="flex items-center gap-3">
-                <div className="h-5 w-5 rounded-full bg-white/10 flex-shrink-0 flex items-center justify-center text-[10px] font-bold">{i + 1}</div>
+                <div className="h-5 w-5 rounded-full bg-white/10 shrink-0 flex items-center justify-center text-[10px] font-bold">{i + 1}</div>
                 <span className="text-xs font-semibold">{s}</span>
               </div>
             ))}
