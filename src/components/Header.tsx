@@ -1,5 +1,5 @@
 "use client";
-import { Phone, Mail, ChevronDown } from "lucide-react";
+import { Phone, ChevronDown, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -9,103 +9,110 @@ export default function Header() {
   return (
     <>
       {/* Top utility bar */}
-      <div className="bg-[#0b1220] text-zinc-400 text-[11px] font-medium py-2 px-6 border-b border-white/4">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <div className="flex gap-5">
-            <span className="flex items-center gap-1.5">
-              <Phone className="h-3 w-3 text-[#f27a1a]" />
-              +91 99000 99000
-            </span>
-            <span className="text-zinc-700">|</span>
-            <span className="flex items-center gap-1.5">
-              <Mail className="h-3 w-3 text-[#f27a1a]" />
-              info@manvi-express.com
-            </span>
+      <div className="bg-[#0b1220] text-zinc-400 text-[11px] font-medium py-2.5 px-6 border-b border-white/5">
+        <div className="max-w-[1700px] mx-auto flex justify-between items-center">
+          <div className="flex items-center gap-2">
+            <Phone className="h-3 w-3 text-white" />
+            <span className="text-white/90">+91 7070-506070</span>
           </div>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-white transition-colors">
-              Partner Signup
-            </a>
-            <span className="text-zinc-700">|</span>
-            <a href="#" className="hover:text-white transition-colors">
-              Partner Login
-            </a>
-            <span className="text-zinc-700">|</span>
-            <a href="#" className="hover:text-white transition-colors">
-              Tracking
-            </a>
+          <div className="flex items-center gap-6">
+            <Link href="/zipcode" className="hover:text-white transition-colors">Servicable Zipcode</Link>
+            <Link href="/track" className="hover:text-white transition-colors">Track Now</Link>
+            <div className="flex items-center gap-1 hover:text-white transition-colors cursor-pointer">
+              Language <ChevronDown className="h-3 w-3" />
+            </div>
           </div>
         </div>
       </div>
 
       {/* Main header */}
-      <header className="sticky top-0 z-50 bg-[#0b1220] border-b border-white/6 py-4 px-6">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
+      <header className="sticky top-0 z-50 px-6 py-4">
+        <div className="max-w-[1700px] mx-auto bg-[#0b1220] rounded-2xl px-8 py-4 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <img
               src="/logo.png"
               alt="Logo"
               style={{
-                width: "70.69297790527344px",
-                height: "36.00497055053711px",
-                transform: "rotate(0deg)",
+                width: "70.69px",
+                height: "36px",
                 opacity: 1,
               }}
               className="object-contain"
             />
-
             <div className="flex flex-col leading-none">
               <span className="text-sm font-extrabold text-white tracking-tight">
                 Manvi
               </span>
-              <span className="text-[10px] text-[#FFFFFF] font-bold uppercase tracking-wider mt-0.5">
+              <span className="text-[10px] text-white font-bold uppercase tracking-wider mt-0.5">
                 International Courier
               </span>
             </div>
           </Link>
 
           {/* Nav */}
-          <nav className="hidden md:flex items-center gap-8 text-xs font-bold text-white uppercase tracking-wider">
-            {/* About Us — dropdown style, links to /about */}
-            <div className="relative group">
+          <div className="hidden md:flex items-center gap-8">
+            <nav className="flex items-center gap-8 text-[13px] font-semibold text-white">
               <Link
                 href="/about"
-                className={`flex items-center gap-1 transition-colors ${
+                className={`transition-colors ${
                   pathname?.startsWith("/about")
                     ? "text-[#f27a1a]"
                     : "hover:text-[#f27a1a]"
                 }`}
               >
                 About Us
-                <ChevronDown className="h-3 w-3 opacity-60" />
               </Link>
-            </div>
 
-            {/* Services */}
-            <div className="relative group">
-              <Link
-                href="/#services"
-                className="flex items-center gap-1 hover:text-[#f27a1a] transition-colors"
-              >
-                Services
-                <ChevronDown className="h-3 w-3 opacity-60" />
-              </Link>
-            </div>
+              <div className="flex items-center gap-1 cursor-pointer hover:text-[#f27a1a] transition-colors">
+                Services <ChevronDown className="h-3.5 w-3.5 opacity-70" />
+              </div>
 
-            {/* Support */}
-            <div className="relative group">
               <Link
-                href="/#contact"
-                className="flex items-center gap-1 hover:text-[#f27a1a] transition-colors"
+                href="/contact"
+                className={`transition-colors ${
+                  pathname?.startsWith("/contact")
+                    ? "text-[#f27a1a]"
+                    : "hover:text-[#f27a1a]"
+                }`}
               >
-                Support
-                <ChevronDown className="h-3 w-3 opacity-60" />
+                Contact Us
               </Link>
+            </nav>
+
+            {/* Grid menu icon */}
+            <div className="w-10 h-10 bg-[#f27a1a] rounded-xl flex items-center justify-center cursor-pointer hover:bg-orange-600 transition-colors">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="white">
+                <rect x="0" y="0" width="4" height="4" rx="1" />
+                <rect x="6" y="0" width="4" height="4" rx="1" />
+                <rect x="12" y="0" width="4" height="4" rx="1" />
+                <rect x="0" y="6" width="4" height="4" rx="1" />
+                <rect x="6" y="6" width="4" height="4" rx="1" />
+                <rect x="12" y="6" width="4" height="4" rx="1" />
+                <rect x="0" y="12" width="4" height="4" rx="1" />
+                <rect x="6" y="12" width="4" height="4" rx="1" />
+                <rect x="12" y="12" width="4" height="4" rx="1" />
+              </svg>
             </div>
-          </nav>
+          </div>
         </div>
       </header>
+
+      {pathname && pathname !== "/" && (
+        <div className="bg-white border-b border-gray-200/80 py-3.5 px-6 shadow-sm relative z-40">
+          <div className="max-w-[1700px] w-full mx-auto flex items-center gap-2 text-xs font-bold text-gray-500">
+            <Link href="/" className="hover:text-[#f27a1a] transition-colors">Home</Link>
+            <ChevronRight className="w-3.5 h-3.5 text-gray-400 shrink-0" />
+            <span className="text-[#f27a1a] font-extrabold uppercase tracking-wide">
+              {pathname === "/about" && "About Us"}
+              {pathname === "/track" && "Track Shipment"}
+              {pathname === "/zipcode" && "Serviceable Zipcode"}
+              {pathname === "/contact" && "Contact Us"}
+              {pathname === "/faq" && "FAQ"}
+            </span>
+          </div>
+        </div>
+      )}
     </>
   );
 }
