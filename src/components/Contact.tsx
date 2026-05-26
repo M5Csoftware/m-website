@@ -18,7 +18,7 @@ export default function Contact() {
               { icon: <MapPin className="h-4 w-4" />, label: "Location", value: "Mumbai, India" },
             ].map(c => (
               <div key={c.label} className="flex items-start gap-3 bg-white border border-slate-100 p-3.5 rounded-xl shadow-sm">
-                <div className="h-8 w-8 rounded-lg bg-orange-50 flex items-center justify-center text-[#f27a1a] flex-shrink-0">{c.icon}</div>
+                <div className="h-8 w-8 rounded-lg bg-orange-50 flex items-center justify-center text-[#f27a1a] shrink-0">{c.icon}</div>
                 <div className="flex flex-col">
                   <span className="text-[9px] text-zinc-400 font-bold uppercase tracking-wider">{c.label}</span>
                   <span className="text-[10px] font-bold text-[#0b1220] mt-0.5">{c.value}</span>
@@ -40,7 +40,7 @@ export default function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
             title="Manvi International Courier Location"
           />
-          <div className="absolute bottom-4 left-4 bg-[#0b1220] text-white p-3 rounded-xl shadow-lg border border-white/5 z-10 max-w-[220px]">
+          <div className="absolute bottom-4 left-4 bg-[#0b1220] text-white p-3 rounded-xl shadow-lg border border-white/5 z-10 max-w-55">
             <span className="text-[8px] font-bold text-[#f27a1a] uppercase tracking-wider block">Headquarters</span>
             <span className="text-[10px] font-bold block mt-0.5">Manvi International Hub</span>
             <p className="text-[9px] text-zinc-400 mt-0.5 leading-normal">Metro Business Plaza, Mumbai, India.</p>

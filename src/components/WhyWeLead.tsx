@@ -22,7 +22,7 @@ export default function WhyWeLead() {
           </div>
 
           {/* 98% - dark navy */}
-          <div className="bg-[#0b1220] text-white p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between min-h-[180px] shadow-sm">
+          <div className="bg-[#0b1220] text-white p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between min-h-45 shadow-sm">
             <div>
               <span className="text-[9px] font-bold uppercase text-[#f27a1a] tracking-widest font-mono">Service Success</span>
             </div>
@@ -34,9 +34,9 @@ export default function WhyWeLead() {
           </div>
 
           {/* Airplane photo - dark */}
-          <div className="bg-[#0b1220] rounded-2xl relative overflow-hidden min-h-[180px] shadow-sm">
+          <div className="bg-[#0b1220] rounded-2xl relative overflow-hidden min-h-45 shadow-sm">
             <Image src="/cargo_airplane.png" alt="Cargo airplane" fill className="object-cover opacity-50" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0b1220]/80 to-transparent z-10" />
+            <div className="absolute inset-0 bg-linear-to-t from-[#0b1220]/80 to-transparent z-10" />
             <div className="absolute bottom-4 left-4 z-20">
               <span className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
                 <span className="text-[#f27a1a]">✈</span> Air Transit
@@ -58,7 +58,7 @@ export default function WhyWeLead() {
           </div>
 
           {/* Forklift photo / 1000+ - orange */}
-          <div className="bg-[#f27a1a] text-white p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between min-h-[180px] shadow-sm">
+          <div className="bg-[#f27a1a] text-white p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between min-h-45 shadow-sm">
             <div className="absolute inset-0 overflow-hidden">
               <Image src="/warehouse_forklift.png" alt="Warehouse" fill className="object-cover opacity-20" />
             </div>
