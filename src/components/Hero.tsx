@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ArrowUpRight, Users, Package, Headphones, MapPin } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   const [pickup, setPickup] = useState("");
@@ -161,18 +162,18 @@ export default function Hero() {
       {/* Action Tabs */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-5">
         {[
-          { icon: <MapPin className="w-4 h-4" />, label: "Serviceable Zipcodes" },
-          { icon: <Package className="w-4 h-4" />, label: "Track Shipment" },
-          { icon: <Users className="w-4 h-4" />, label: "Our Services" },
-          { icon: <Headphones className="w-4 h-4" />, label: "Contact Us" },
+          { icon: <MapPin className="w-4 h-4" />, label: "Serviceable Zipcodes", href: "#" },
+          { icon: <Package className="w-4 h-4" />, label: "Track Shipment", href: "/track" },
+          { icon: <Users className="w-4 h-4" />, label: "Our Services", href: "#services" },
+          { icon: <Headphones className="w-4 h-4" />, label: "Contact Us", href: "#contact" },
         ].map(tab => (
-          <a
+          <Link
             key={tab.label}
-            href="#"
+            href={tab.href}
             className="flex items-center justify-center gap-3 bg-[#0b1220] hover:bg-[#f27a1a] rounded-2xl text-[14px] font-semibold text-white py-4 transition-all"
           >
             {tab.icon} {tab.label}
-          </a>
+          </Link>
         ))}
       </div>
     </section>
