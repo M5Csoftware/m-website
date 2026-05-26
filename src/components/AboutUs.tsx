@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 // ── Icon helpers ────────────────────────────────────────────────────
 const OrangeCircleIcon = ({ children }: { children: React.ReactNode }) => (
@@ -37,11 +38,6 @@ function AboutBanner() {
         <h1 className="text-3xl font-extrabold text-white tracking-wide">
           About Us
         </h1>
-        <p className="text-sm text-slate-300 mt-1">
-          <span className="text-slate-400">Home</span>
-          <span className="text-slate-400 mx-1">/</span>
-          <span className="text-white font-semibold">About Us</span>
-        </p>
       </div>
     </div>
   );
