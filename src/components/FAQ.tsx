@@ -33,8 +33,8 @@ export default function FAQ() {
   const [activeIndex, setActiveIndex] = useState<number>(1);
 
   return (
-    <section id="faq" className="max-w-[1700px] w-full mx-auto px-6 mt-6 font-sans">
-      <div className="bg-[#eef0f5] rounded-[32px] px-10 md:px-16 lg:px-20 py-14 md:py-20 shadow-sm border border-gray-100">
+    <section id="faq" className="max-w-425 w-full mx-auto px-6 mt-6 font-sans">
+      <div className="bg-[#eef0f5] rounded-4xl px-10 md:px-16 lg:px-20 py-14 md:py-20 shadow-sm border border-gray-100">
         
         {/* Badge & Title */}
         <div className="flex flex-col items-center text-center gap-3 mb-14">
