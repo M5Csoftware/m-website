@@ -12,7 +12,7 @@ export default function Header() {
     <>
       {/* Top utility bar */}
       <div className="bg-[#0b1220] text-zinc-400 text-[11px] font-medium py-2.5 px-4 sm:px-6 border-b border-white/5">
-        <div className="max-w-[1700px] mx-auto flex justify-between items-center">
+        <div className="max-w-425 mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Phone className="h-3 w-3 text-white" />
             <span className="text-white/90">+91 7070-506070</span>
@@ -29,7 +29,7 @@ export default function Header() {
 
       {/* Main header */}
       <header className="sticky top-0 z-50 px-4 sm:px-6 py-4">
-        <div className="max-w-[1700px] mx-auto bg-[#0b1220] rounded-2xl px-6 sm:px-8 py-4 flex justify-between items-center">
+        <div className="max-w-425 mx-auto bg-[#0b1220] rounded-2xl px-6 sm:px-8 py-4 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <img
@@ -124,7 +124,7 @@ export default function Header() {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-[135px] z-40 bg-white px-6 py-6 shadow-xl border-t border-gray-100 flex flex-col gap-6 font-sans">
+        <div className="md:hidden fixed inset-0 top-33.75 z-40 bg-white px-6 py-6 shadow-xl border-t border-gray-100 flex flex-col gap-6 font-sans">
           <nav className="flex flex-col gap-4 text-[16px] font-bold text-[#1c1f2e]">
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className={`pb-2 border-b border-gray-100 ${pathname === "/" ? "text-[#f27a1a]" : ""}`}>Home</Link>
             <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className={`pb-2 border-b border-gray-100 ${pathname?.startsWith("/about") ? "text-[#f27a1a]" : ""}`}>About Us</Link>
@@ -137,7 +137,7 @@ export default function Header() {
 
       {pathname && pathname !== "/" && (
         <div className="bg-white border-b border-gray-200/80 py-3.5 px-4 sm:px-6 shadow-sm relative z-30">
-          <div className="max-w-[1700px] w-full mx-auto flex items-center gap-2 text-xs font-bold text-gray-500">
+          <div className="max-w-425 w-full mx-auto flex items-center gap-2 text-xs font-bold text-gray-500">
             <Link href="/" className="hover:text-[#f27a1a] transition-colors">Home</Link>
             <ChevronRight className="w-3.5 h-3.5 text-gray-400 shrink-0" />
             <span className="text-[#f27a1a] font-extrabold uppercase tracking-wide">
