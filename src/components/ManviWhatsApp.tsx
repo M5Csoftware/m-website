@@ -28,17 +28,17 @@ export default function ManviWhatsApp() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Contact on WhatsApp"
-        className="fixed bottom-6 left-6 z-50 w-[56px] h-[56px] rounded-full bg-black shadow-[0_6px_24px_rgba(0,0,0,0.3)] border-none cursor-pointer flex items-center justify-center transition-transform duration-200 hover:scale-110 active:scale-95"
+        className="fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full bg-black shadow-[0_6px_24px_rgba(0,0,0,0.3)] border-none cursor-pointer flex items-center justify-center transition-transform duration-200 hover:scale-110 active:scale-95"
       >
         <WhatsAppIcon width={26} height={26} fill="white" />
         {/* Active Online green dot */}
-        <span className="absolute top-0 right-0 w-[12px] h-[12px] rounded-full bg-[#4ade80] border-2 border-white" />
+        <span className="absolute top-0 right-0 w-3 h-3 rounded-full bg-[#4ade80] border-2 border-white" />
       </button>
 
       {/* WhatsApp chat popup card */}
       {isOpen && (
         <div
-          className="fixed bottom-24 left-6 z-50 w-[330px] rounded-[24px] p-4 flex flex-col gap-4 bg-white shadow-[0_12px_48px_rgba(0,0,0,0.15)] font-sans border border-slate-100"
+          className="fixed bottom-24 left-6 z-50 w-82.5 rounded-3xl p-4 flex flex-col gap-4 bg-white shadow-[0_12px_48px_rgba(0,0,0,0.15)] font-sans border border-slate-100"
           style={{
             animation: "whatsAppPop 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
           }}
@@ -47,7 +47,7 @@ export default function ManviWhatsApp() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               {/* Brand Avatar Icon */}
-              <div className="w-[36px] h-[36px] rounded-full bg-[#fff7ed] flex items-center justify-center shrink-0 border border-orange-100 shadow-sm">
+              <div className="w-9 h-9 rounded-full bg-[#fff7ed] flex items-center justify-center shrink-0 border border-orange-100 shadow-sm">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="transform -rotate-45">
                   <path d="M21.71 11.29l-9-9C12.53 2.11 12.28 2 12 2H3c-.55 0-1 .45-1 1v9c0 .28.11.53.29.71l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.42zM6 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" fill="#ff8a00" />
                 </svg>
