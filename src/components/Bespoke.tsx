@@ -16,12 +16,12 @@ export default function Bespoke() {
   const [activeAccordion, setActiveAccordion] = useState<1 | 2>(2);
 
   return (
-    <section id="services" className="max-w-[1700px] w-full mx-auto px-4 sm:px-6 py-10 font-sans">
-      <div className="bg-[#eef0f5] rounded-[32px] shadow-sm border border-gray-100 p-6 sm:p-10 lg:p-14">
+    <section id="services" className="max-w-425 w-full mx-auto px-4 sm:px-6 py-10 font-sans">
+      <div className="bg-[#eef0f5] rounded-4xl shadow-sm border border-gray-100 p-6 sm:p-10 lg:p-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
           {/* Left Side: Symmetrical Image with Read More Cutout */}
-          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[580px] rounded-[32px] overflow-hidden bg-slate-100 shadow-md shrink-0">
+          <div className="relative w-full h-75 sm:h-100 md:h-125 lg:h-145 rounded-4xl overflow-hidden bg-slate-100 shadow-md shrink-0">
             <Image 
               src="/warehouse_worker.png" 
               alt="Bespoke Shipping Solutions" 
