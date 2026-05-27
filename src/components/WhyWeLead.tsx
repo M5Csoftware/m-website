@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function WhyWeLead() {
   return (
-    <section className="w-full mx-auto px-4 sm:px-6 py-10 font-sans max-w-[1700px]">
-      <div className="bg-[#eef0f5] rounded-[32px] shadow-sm border border-gray-100 p-6 sm:p-10 lg:p-14">
+    <section className="w-full mx-auto px-4 sm:px-6 py-10 font-sans max-w-425">
+      <div className="bg-[#eef0f5] rounded-4xl shadow-sm border border-gray-100 p-6 sm:p-10 lg:p-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           
           {/* ROW 1 */}
@@ -18,7 +18,7 @@ export default function WhyWeLead() {
           </div>
           
           {/* Column 2: Delivery Success Card */}
-          <div className="group bg-white rounded-[32px] p-6 sm:p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between h-[220px] sm:h-[240px] lg:h-auto transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] hover:border-[#ff8a00]/30 cursor-pointer">
+          <div className="group bg-white rounded-4xl p-6 sm:p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between h-55 sm:h-60 lg:h-auto transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] hover:border-[#ff8a00]/30 cursor-pointer">
             <div className="flex items-center gap-2.5">
               <span className="text-xl leading-none transition-transform duration-300 group-hover:scale-115">📦</span>
               <span className="font-bold text-[#333b49] text-[15px]">Delivery Success</span>
@@ -33,7 +33,7 @@ export default function WhyWeLead() {
           </div>
           
           {/* Column 3 & 4: Airplane Image */}
-          <div className="md:col-span-2 relative rounded-[32px] overflow-hidden h-[220px] sm:h-[240px] lg:h-auto shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] bg-slate-100 flex items-center justify-center cursor-pointer">
+          <div className="md:col-span-2 relative rounded-4xl overflow-hidden h-55 sm:h-60 lg:h-auto shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] bg-slate-100 flex items-center justify-center cursor-pointer">
             <Image 
               src="/cargo_airplane.png" 
               alt="Cargo Airplane" 
@@ -44,7 +44,7 @@ export default function WhyWeLead() {
 
           {/* ROW 2 */}
           {/* Column 1: Elite Partnerships Card */}
-          <div className="group bg-white rounded-[32px] p-6 sm:p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between min-h-[280px] sm:min-h-[340px] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] hover:border-[#ff8a00]/30 cursor-pointer">
+          <div className="group bg-white rounded-4xl p-6 sm:p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between min-h-70 sm:min-h-85 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] hover:border-[#ff8a00]/30 cursor-pointer">
             <div className="flex items-center gap-2.5">
               <span className="text-xl leading-none transition-transform duration-300 group-hover:scale-115">🌍</span>
               <span className="font-bold text-[#333b49] text-[15px]">Elite Partnerships</span>
@@ -61,7 +61,7 @@ export default function WhyWeLead() {
           </div>
           
           {/* Column 2: Warehouse Image */}
-          <div className="relative rounded-[32px] overflow-hidden min-h-[280px] sm:min-h-[340px] shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] bg-slate-100 flex items-center justify-center cursor-pointer">
+          <div className="relative rounded-4xl overflow-hidden min-h-70 sm:min-h-85 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] bg-slate-100 flex items-center justify-center cursor-pointer">
             <Image 
               src="/warehouse_forklift.png" 
               alt="Warehouse Forklift" 
@@ -71,7 +71,7 @@ export default function WhyWeLead() {
           </div>
           
           {/* Column 3: Customs Mastery Card */}
-          <div className="group bg-white rounded-[32px] p-6 sm:p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between min-h-[280px] sm:min-h-[340px] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] hover:border-[#ff8a00]/30 cursor-pointer">
+          <div className="group bg-white rounded-4xl p-6 sm:p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between min-h-70 sm:min-h-85 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] hover:border-[#ff8a00]/30 cursor-pointer">
             <div className="flex items-center gap-2.5">
               <span className="text-xl leading-none transition-transform duration-300 group-hover:scale-115">🚚</span>
               <span className="font-bold text-[#333b49] text-[15px]">Customs Mastery</span>
@@ -86,7 +86,7 @@ export default function WhyWeLead() {
           </div>
           
           {/* Column 4: Technological Edge Card */}
-          <div className="group bg-white rounded-[32px] p-6 sm:p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between min-h-[280px] sm:min-h-[340px] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] hover:border-[#ff8a00]/30 cursor-pointer">
+          <div className="group bg-white rounded-4xl p-6 sm:p-8 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col justify-between min-h-70 sm:min-h-85 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)] hover:border-[#ff8a00]/30 cursor-pointer">
             <div className="flex items-center gap-2.5">
               <span className="text-xl leading-none transition-transform duration-300 group-hover:scale-115">🤝</span>
               <span className="font-bold text-[#333b49] text-[15px]">Technological Edge</span>
