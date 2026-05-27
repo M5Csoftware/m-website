@@ -148,7 +148,7 @@ export default function ManviChatBot() {
             background: "#ffffff",
             boxShadow: "0 12px 48px rgba(0,0,0,0.18)",
             fontFamily: "'Segoe UI', system-ui, sans-serif",
-            animation: "chatPop 0.25s cubic-bezier(0.34,1.56,0.64,1)",
+            animation: "chatPop 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
             boxSizing: "border-box",
           }}
         >
@@ -391,8 +391,8 @@ export default function ManviChatBot() {
 
       <style>{`
         @keyframes chatPop {
-          from { opacity: 0; transform: scale(0.82) translateY(18px); transform-origin: bottom right; }
-          to   { opacity: 1; transform: scale(1)    translateY(0);    }
+          from { opacity: 0; transform: translateY(10px); }
+          to   { opacity: 1; transform: translateY(0);    }
         }
         @keyframes typingDot {
           0%, 80%, 100% { transform: translateY(0);    opacity: 0.35; }

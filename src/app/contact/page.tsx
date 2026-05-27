@@ -39,9 +39,9 @@ export default function ContactPage() {
       <Header />
 
       {/* Top Dark Banner */}
-      <section className="relative bg-[#0b1220] overflow-hidden min-h-[220px] flex items-center py-12 px-6">
+      <section className="relative bg-[#0b1220] overflow-hidden min-h-55 flex items-center py-12 px-6">
         <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center" />
-        <div className="max-w-[1700px] w-full mx-auto flex flex-col md:flex-row justify-between items-start md:items-center relative z-10 gap-4">
+        <div className="max-w-425 w-full mx-auto flex flex-col md:flex-row justify-between items-start md:items-center relative z-10 gap-4">
           <div>
             <h1 className="text-[36px] md:text-[44px] font-extrabold text-white leading-tight tracking-tight">
               Contact Us
@@ -51,7 +51,7 @@ export default function ContactPage() {
       </section>
 
       {/* Main Grid Content */}
-      <main className="flex-grow max-w-[1700px] w-full mx-auto px-6 py-12 flex flex-col gap-10">
+      <main className="flex-grow max-w-425 w-full mx-auto px-6 py-12 flex flex-col gap-10">
         
         {/* Top Split Sections */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -60,7 +60,7 @@ export default function ContactPage() {
           <div className="lg:col-span-5 flex flex-col gap-6 lg:sticky lg:top-28">
             
             {/* Get In Touch Card */}
-            <div className="bg-[#eef0f5] rounded-[32px] p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col gap-6">
+            <div className="bg-[#eef0f5] rounded-4xl p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col gap-6">
               <div className="flex flex-col gap-3">
                 <h2 className="text-[28px] md:text-[34px] font-extrabold text-[#1c1f2e] leading-tight tracking-tight">
                   Get In Touch
@@ -104,7 +104,7 @@ export default function ContactPage() {
             </div>
 
             {/* We're Here To Help Inquiry Trigger Card */}
-            <div className="bg-[#eef0f5] rounded-[32px] p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col items-start gap-5">
+            <div className="bg-[#eef0f5] rounded-4xl p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col items-start gap-5">
               <h3 className="text-[28px] md:text-[34px] font-extrabold text-[#f27a1a] tracking-tight leading-tight">
                 We&apos;re Here To Help
               </h3>
@@ -125,7 +125,7 @@ export default function ContactPage() {
           <div className="lg:col-span-7 flex flex-col gap-6">
             
             {/* Card 1: Direct Communication Channels */}
-            <div className={`bg-[#eef0f5] rounded-[32px] p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col gap-6 transition-all duration-300 ${
+            <div className={`bg-[#eef0f5] rounded-4xl p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col gap-6 transition-all duration-300 ${
               activeTab === "01" ? "ring-2 ring-[#f27a1a]/50" : ""
             }`}>
               <div className="flex items-center gap-4">
@@ -167,7 +167,7 @@ export default function ContactPage() {
             </div>
 
             {/* Card 2: Visit Our Head Office */}
-            <div className={`bg-[#eef0f5] rounded-[32px] p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col gap-6 transition-all duration-300 ${
+            <div className={`bg-[#eef0f5] rounded-4xl p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col gap-6 transition-all duration-300 ${
               activeTab === "02" ? "ring-2 ring-[#f27a1a]/50" : ""
             }`}>
               <div className="flex items-center gap-4">
@@ -189,7 +189,7 @@ export default function ContactPage() {
             </div>
 
             {/* Card 3: Operating Hours */}
-            <div className={`bg-[#eef0f5] rounded-[32px] p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col gap-6 transition-all duration-300 ${
+            <div className={`bg-[#eef0f5] rounded-4xl p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col gap-6 transition-all duration-300 ${
               activeTab === "03" ? "ring-2 ring-[#f27a1a]/50" : ""
             }`}>
               <div className="flex items-center gap-4">
@@ -216,7 +216,7 @@ export default function ContactPage() {
             </div>
 
             {/* Card 4: Global Reach Support */}
-            <div className={`bg-[#eef0f5] rounded-[32px] p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col gap-6 transition-all duration-300 ${
+            <div className={`bg-[#eef0f5] rounded-4xl p-8 lg:p-10 shadow-sm border border-gray-200/50 flex flex-col gap-6 transition-all duration-300 ${
               activeTab === "04" ? "ring-2 ring-[#f27a1a]/50" : ""
             }`}>
               <div className="flex items-center gap-4">
@@ -262,7 +262,7 @@ export default function ContactPage() {
         </div>
 
         {/* Inquiry Form Section */}
-        <section id="inquiry-form-section" className="bg-[#eef0f5] rounded-[32px] p-8 lg:p-14 shadow-sm border border-gray-200/50">
+        <section id="inquiry-form-section" className="bg-[#eef0f5] rounded-4xl p-8 lg:p-14 shadow-sm border border-gray-200/50">
           <div className="flex flex-col gap-3 mb-10">
             <h2 className="text-[32px] md:text-[38px] font-extrabold text-[#1c1f2e] tracking-tight">
               Inquiry Form
