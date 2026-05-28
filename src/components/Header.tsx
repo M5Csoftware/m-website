@@ -18,8 +18,15 @@ export default function Header() {
             <span className="text-white/90">+91 7070-506070</span>
           </div>
           <div className="hidden sm:flex items-center gap-6">
-            <Link href="/zipcode" className="hover:text-white transition-colors">Servicable Zipcode</Link>
-            <Link href="/track" className="hover:text-white transition-colors">Track Now</Link>
+            <Link
+              href="/zipcode"
+              className="hover:text-white transition-colors"
+            >
+              Servicable Zipcode
+            </Link>
+            <Link href="/track" className="hover:text-white transition-colors">
+              Track Now
+            </Link>
             <div className="flex items-center gap-1 hover:text-white transition-colors cursor-pointer">
               Language <ChevronDown className="h-3 w-3" />
             </div>
@@ -43,10 +50,28 @@ export default function Header() {
               className="object-contain"
             />
             <div className="flex flex-col leading-none">
-              <span className="text-sm font-extrabold text-white tracking-tight">
+              <span
+                style={{
+                  fontFamily: "var(--font-league-spartan), sans-serif",
+                  fontWeight: 700,
+                  fontSize: "18px",
+                  lineHeight: "100%",
+                  letterSpacing: 0,
+                }}
+                className="text-white"
+              >
                 Manvi
               </span>
-              <span className="text-[10px] text-white font-bold uppercase tracking-wider mt-0.5">
+              <span
+                style={{
+                  fontFamily: "var(--font-league-spartan), sans-serif",
+                  fontWeight: 700,
+                  fontSize: "18px",
+                  lineHeight: "100%",
+                  letterSpacing: 0,
+                }}
+                className="text-white"
+              >
                 International Courier
               </span>
             </div>
@@ -99,7 +124,7 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div 
+          <div
             className="md:hidden w-10 h-10 bg-[#f27a1a] rounded-xl flex items-center justify-center cursor-pointer hover:bg-orange-600 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -126,11 +151,41 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden fixed inset-0 top-33.75 z-40 bg-white px-6 py-6 shadow-xl border-t border-gray-100 flex flex-col gap-6 font-sans">
           <nav className="flex flex-col gap-4 text-[16px] font-bold text-[#1c1f2e]">
-            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className={`pb-2 border-b border-gray-100 ${pathname === "/" ? "text-[#f27a1a]" : ""}`}>Home</Link>
-            <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className={`pb-2 border-b border-gray-100 ${pathname?.startsWith("/about") ? "text-[#f27a1a]" : ""}`}>About Us</Link>
-            <Link href="/track" onClick={() => setIsMobileMenuOpen(false)} className={`pb-2 border-b border-gray-100 ${pathname?.startsWith("/track") ? "text-[#f27a1a]" : ""}`}>Track Shipment</Link>
-            <Link href="/zipcode" onClick={() => setIsMobileMenuOpen(false)} className={`pb-2 border-b border-gray-100 ${pathname?.startsWith("/zipcode") ? "text-[#f27a1a]" : ""}`}>Serviceable Zipcode</Link>
-            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className={`pb-2 border-b border-gray-100 ${pathname?.startsWith("/contact") ? "text-[#f27a1a]" : ""}`}>Contact Us</Link>
+            <Link
+              href="/"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`pb-2 border-b border-gray-100 ${pathname === "/" ? "text-[#f27a1a]" : ""}`}
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`pb-2 border-b border-gray-100 ${pathname?.startsWith("/about") ? "text-[#f27a1a]" : ""}`}
+            >
+              About Us
+            </Link>
+            <Link
+              href="/track"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`pb-2 border-b border-gray-100 ${pathname?.startsWith("/track") ? "text-[#f27a1a]" : ""}`}
+            >
+              Track Shipment
+            </Link>
+            <Link
+              href="/zipcode"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`pb-2 border-b border-gray-100 ${pathname?.startsWith("/zipcode") ? "text-[#f27a1a]" : ""}`}
+            >
+              Serviceable Zipcode
+            </Link>
+            <Link
+              href="/contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`pb-2 border-b border-gray-100 ${pathname?.startsWith("/contact") ? "text-[#f27a1a]" : ""}`}
+            >
+              Contact Us
+            </Link>
           </nav>
         </div>
       )}
@@ -138,13 +193,16 @@ export default function Header() {
       {pathname && pathname !== "/" && (
         <div className="bg-white border-b border-gray-200/80 py-3.5 px-4 sm:px-6 shadow-sm relative z-30">
           <div className="max-w-425 w-full mx-auto flex items-center gap-2 text-xs font-bold text-gray-500">
-            <Link href="/" className="hover:text-[#f27a1a] transition-colors">Home</Link>
+            <Link href="/" className="hover:text-[#f27a1a] transition-colors">
+              Home
+            </Link>
             <ChevronRight className="w-3.5 h-3.5 text-gray-400 shrink-0" />
             <span className="text-[#f27a1a] font-extrabold uppercase tracking-wide">
               {pathname === "/about" && "About Us"}
               {pathname === "/track" && "Track Shipment"}
               {pathname === "/zipcode" && "Serviceable Zipcode"}
               {pathname === "/contact" && "Contact Us"}
+              {pathname === "/quote" && "Get a Quote"}
               {pathname === "/faq" && "FAQ"}
             </span>
           </div>
