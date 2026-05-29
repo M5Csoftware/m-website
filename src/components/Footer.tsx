@@ -61,7 +61,7 @@ export default function Footer() {
               <div className="flex gap-3">
                 {/* Facebook */}
                 <a
-                  href="#"
+                  href="https://www.facebook.com/p/Manvi-International-Courier-61575480958807/"
                   className="text-white hover:text-white/70 transition-colors"
                 >
                   <svg

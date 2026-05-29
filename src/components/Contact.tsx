@@ -58,9 +58,14 @@ export default function Contact() {
               <span className="text-[14px] text-gray-500 font-medium">
                 info@manvicourier.com
               </span>
-              <span className="text-[14px] text-gray-500 font-medium">
-                Insta Handle
-              </span>
+              <a
+                href="https://www.instagram.com/manviinternational/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[14px] text-gray-500 font-medium hover:text-[#f27a1a] transition-colors"
+              >
+                @manviinternational
+              </a>
             </div>
           </div>
         </div>
