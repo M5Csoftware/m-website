@@ -74,7 +74,7 @@ export default function Footer() {
                 </a>
                 {/* Instagram */}
                 <a
-                  href="#"
+                  href="https://www.instagram.com/manviinternational/"
                   className="text-white hover:text-white/70 transition-colors"
                 >
                   <svg
