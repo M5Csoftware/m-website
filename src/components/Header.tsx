@@ -88,9 +88,16 @@ export default function Header() {
                 About Us
               </Link>
 
-              <div className="flex items-center gap-1 cursor-pointer hover:text-[#f27a1a] transition-colors">
-                Services <ChevronDown className="h-3.5 w-3.5 opacity-70" />
-              </div>
+              <Link
+                href="/services"
+                className={`flex items-center gap-1 transition-colors ${
+                  pathname?.startsWith("/services")
+                    ? "text-[#f27a1a]"
+                    : "hover:text-[#f27a1a]"
+                }`}
+              >
+                Services
+              </Link>
 
               <Link
                 href="/track"
@@ -197,6 +204,7 @@ export default function Header() {
               {pathname === "/contact" && "Contact Us"}
               {pathname === "/quote" && "Get a Quote"}
               {pathname === "/faq" && "FAQ"}
+              {pathname === "/services" && "Services"}
             </span>
           </div>
         </div>
