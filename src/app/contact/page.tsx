@@ -148,19 +148,19 @@ export default function ContactPage() {
                 <div className="flex items-start sm:items-center gap-3">
                   <Mail className="w-4 h-4 text-[#f27a1a] mt-1 sm:mt-0 shrink-0" />
                   <div className="text-[14px] font-semibold text-gray-500">
-                    General Inquiries: <span className="text-[#f27a1a] font-bold">Info@manviinternational.Com</span>
+                    General Inquiries: <span className="text-[#f27a1a] font-bold">Info@manvicourier.com</span>
                   </div>
                 </div>
                 <div className="flex items-start sm:items-center gap-3">
                   <Mail className="w-4 h-4 text-[#f27a1a] mt-1 sm:mt-0 shrink-0" />
                   <div className="text-[14px] font-semibold text-gray-500">
-                    Business & Partnerships: <span className="text-[#f27a1a] font-bold">Sales@manviinternational.Com</span>
+                    Business & Partnerships: <span className="text-[#f27a1a] font-bold">Sales@manvicourier.com</span>
                   </div>
                 </div>
                 <div className="flex items-start sm:items-center gap-3">
                   <Mail className="w-4 h-4 text-[#f27a1a] mt-1 sm:mt-0 shrink-0" />
                   <div className="text-[14px] font-semibold text-gray-500">
-                    Claims & Refunds: <span className="text-[#f27a1a] font-bold">Info@Manviinternational.Com</span>
+                    Claims & Refunds: <span className="text-[#f27a1a] font-bold">Info@manvicourier.com</span>
                   </div>
                 </div>
               </div>
